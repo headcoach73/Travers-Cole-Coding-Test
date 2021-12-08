@@ -1,0 +1,2 @@
+C:\Users\User\source\repos\CodingTest\CodingTest\bin\publish\CodingTest.pdb
+C:\Users\User\source\repos\CodingTest\CodingTest\bin\publish\CodingTest.exe
