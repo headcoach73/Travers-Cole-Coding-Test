@@ -69,16 +69,16 @@ An example custom animation sequence.
 I used c# for the project as it is my preferred language.
 For rendering I used openGL for graphics API and Glfw for the display window loop.
 
-Shapes:<br />
+**Shapes:**<br />
 To define shapes I used an abstract class that handle all of the logic for rendering and animating the a shape. 
 This shape implementations only had to inherit from this class and define the vertices of the shape.
 
-Animation:<br />
+**Animation:**<br />
 Animation used an abstract class used to store the animations movement rate and an abstract method that provides the shapes transform and deltaTime.
 Shapes transform was used to define the shapes position, rotation and scale in the scene. This, the movement rate and the deltaTime, 
 was all that was required to animate a shape in any given way by a superclasses.
 
-Commands:<br />
+**Commands:**<br />
 I created a console command line interface as it seemed the quickiest way of creating an interface for controlling shapes at runtime.
 To do this I read the console input async on a different thread and added any inputs to a thread safe concurrrent queue.
 These inputs could then be processed by the main thread. 
